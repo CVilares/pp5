@@ -27,7 +27,7 @@ body {
     width: fit-content;
 }
 
-/* Adicione estes estilos para centralizar o botão Shop Now */
+
 .shop-now-container {
     display: flex;
     flex-direction: column;

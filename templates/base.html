@@ -45,12 +45,12 @@
 </head>
 <header class="container-fluid fixed-top">
     <div class="row">
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left d-none d-lg-block">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
                 <h2 class="logo-font text-black my-0"><strong>Your Skin</strong></h2>
             </a>
         </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
             <form method="GET" action="">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q"
@@ -65,7 +65,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                 <li class="list-inline-item dropdown">
                     <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
@@ -107,6 +107,17 @@
             </ul>
         </div>
     </div>
+    <div class="row bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            {% include 'includes/mobile-top-header.html' %}
+            {% include 'includes/main-nav.html' %}
+        </nav>
+    </div>
+    
 
 
 </header>
