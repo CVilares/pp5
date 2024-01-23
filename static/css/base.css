@@ -7,8 +7,14 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    
 }
+body,
+header,
+footer {
+    font-family: 'Grape Nuts', sans-serif;
+}
+
 
 /* from Bulma */
 .icon {
@@ -81,6 +87,35 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
+.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    
+}
+
+.footerLink {
+    color: black;
+}
+
+.footerLink:hover {
+    color: inherit;
+    
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+#footerTitle {
+    margin-bottom: 10px;
+}
+
 
 /* -------------------------------- Media Queries */
 

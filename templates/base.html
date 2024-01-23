@@ -17,7 +17,9 @@
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -143,5 +145,27 @@
 
 
 </body>
-
+<footer class="sticky-footer">
+    <div class="container my-auto">
+        
+            
+        
+    </div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link footerLink" aria-current="page" href=""><strong>About Us</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link footerLink" href="https://www.instagram.com" target=_blank><strong>Instagram</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link footerLink" href=""><strong>My Order</strong></a>
+        </li>
+    </ul>
+    <div class="container my-auto">
+        <div class="text-center my-auto" id="copyright">
+            <strong>Copyright © Carlos Vilares 2024</strong>
+        </div>
+    </div>
+</footer>
 </html>
