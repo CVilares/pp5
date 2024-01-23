@@ -6,5 +6,86 @@
             "name": "Manchester United",
             "friendly_name": "Manchester United"
         }
+    },
+
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "Arsenal",
+            "friendly_name": "Arsenal"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "Manchester City",
+            "friendly_name": "Manchester City"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "Liverpool",
+            "friendly_name": "Liverpool"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "Sporting Portugal",
+            "friendly_name": "Sporting Portugal"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "FC Porto",
+            "friendly_name": "FC Porto"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "Benfica",
+            "friendly_name": "Benfica"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "Barcelona",
+            "friendly_name": "Barcelona"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "Real Madrid",
+            "friendly_name": "Real Madrid"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "Atletico de Madrid",
+            "friendly_name": "Atletico de Madrid"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "Real Sociedad",
+            "friendly_name": "Real Sociedad"
+        }
     }
 ]

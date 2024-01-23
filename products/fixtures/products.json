@@ -10,8 +10,158 @@
             "category": 1,
             "year": 1999,
             "size": "XL",
-            "image_url": "https://www.google.com/search?q=man+utd+jersey+99&oq=man+utd+jersey+99&aqs=chrome..69i57j0i10i512j0i10i22i30l2j0i22i30l6.1490972149j0j15&sourceid=chrome&ie=UTF-8#vhid=DfHI327UtGoekM&vssid=l",
-            "image": "media/Man-Utd-98-99_yWAFXWT.webp" 
+            "image_url": "https://i0.wp.com/classicscollectivestore.com/wp-content/uploads/2021/01/Man-Utd-98-99.png?fit=800%2C800&ssl=1",
+            "image": "Man-Utd-98-99_yWAFXWT.webp" 
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "2",
+            "name": "Arsenal",
+            "description": "Classic retro jersey featuring the iconic Arsenal design.",
+            "price": 89.99,
+            "category": 2,
+            "year": 2003,
+            "size": "L",
+            "image_url": "https://static.wixstatic.com/media/4d618a_075b120d24f3461389defab9dca9b22b~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+            "image": "arsenal.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "3",
+            "name": "Manchester City",
+            "description": "Classic retro jersey featuring the iconic Manchester City design.",
+            "price": 99.99,
+            "category": 3,
+            "year": 2012,
+            "size": "M",
+            "image_url": "https://classic-shirts.com//eng_pl_2012-13-MANCHESTER-CITY-SHIRT-S-160641_6.jpg",
+            "image": "manchester-city.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "4",
+            "name": "Liverpool",
+            "description": "Classic retro jersey featuring the iconic Liverpool design.",
+            "price": 79.99,
+            "category": 4,
+            "year": 2005,
+            "size": "XL",
+            "image_url": "https://www.3retro.com/siteimg/listings/714.jpg",
+            "image": "liverpool.jpeg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "5",
+            "name": "Sporting Portugal",
+            "description": "Classic retro jersey featuring the iconic Sporting Portugal design.",
+            "price": 69.99,
+            "category": 5,
+            "year": 1998,
+            "size": "L",
+            "image_url": "https://i.ebayimg.com/images/g/oI0AAOSwbThiSySY/s-l1200.webp",
+            "image": "sporting.webp"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "6",
+            "name": "FC Porto",
+            "description": "Classic retro jersey featuring the iconic FC Porto design.",
+            "price": 75.99,
+            "category": 6,
+            "year": 2004,
+            "size": "M",
+            "image_url": "https://i.ebayimg.com/thumbs/images/g/38cAAOSwd~VlnmaC/s-l640.jpg",
+            "image": "porto.jpeg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "7",
+            "name": "Benfica",
+            "description": "Classic retro jersey featuring the iconic Benfica design.",
+            "price": 82.99,
+            "category": 7,
+            "year": 1999,
+            "size": "XL",
+            "image_url": "https://www.vintagefootballshirts.com/uploads/products/images/1999-00-benfica-home-shirt-l-20746-1.jpg",
+            "image": "benfica.jpeg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "8",
+            "name": "Barcelona",
+            "description": "Classic retro jersey featuring the iconic Barcelona design.",
+            "price": 95.99,
+            "category": 8,
+            "year": 2008,
+            "size": "L",
+            "image_url": "https://www.cultfootball.co.uk/cdn/shop/products/57_b97847e4-189b-46d1-946e-07927b5ef5c8_1600x.jpg?v=1680307124",
+            "image": "barcelona.webp"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "9",
+            "name": "Real Madrid",
+            "description": "Classic retro jersey featuring the iconic Real Madrid design.",
+            "price": 99.99,
+            "category": 9,
+            "year": 2010,
+            "size": "M",
+            "image_url": "https://i.pinimg.com/736x/85/51/ac/8551ac1d4afaec18a76d694353d19efc.jpg",
+            "image": "madrid.jpeg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "10",
+            "name": "Atletico de Madrid",
+            "description": "Classic retro jersey featuring the iconic Atletico de Madrid design.",
+            "price": 88.99,
+            "category": 10,
+            "year": 2007,
+            "size": "XL",
+            "image_url": "https://cdn.charitystars.com/cache/resizedcrop-7da4af3f1465a5c0b1d7dff1988a1470-840x630.jpg",
+            "image": "atletico.jpeg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "11",
+            "name": "Real Sociedad",
+            "description": "Classic retro jersey featuring the iconic Real Sociedad design.",
+            "price": 79.99,
+            "category": 11,
+            "year": 1995,
+            "size": "L",
+            "image_url": "https://www.rb-jerseys.com/wp-content/uploads/2021/10/P1160428-scaled.jpg",
+            "image": "sociedad.webp"
         }
     }
 ]
