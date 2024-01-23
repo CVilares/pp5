@@ -3,14 +3,15 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": "man-utd-98-99",
-            "name": "Manchester United 1998-1999 Retro Jersey",
+            "sku": "1",
+            "name": "Manchester United ",
             "description": "Classic retro jersey featuring the iconic Manchester United design from the 1998-1999 season.",
             "price": 79.99,
             "category": 1,
-            "rating": 5.0,
+            "year": 1999,
+            "size": "XL",
             "image_url": "https://www.google.com/search?q=man+utd+jersey+99&oq=man+utd+jersey+99&aqs=chrome..69i57j0i10i512j0i10i22i30l2j0i22i30l6.1490972149j0j15&sourceid=chrome&ie=UTF-8#vhid=DfHI327UtGoekM&vssid=l",
-            "image": "media/Man-Utd-98-99.webp" 
+            "image": "media/Man-Utd-98-99_yWAFXWT.webp" 
         }
     }
 ]

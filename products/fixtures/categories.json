@@ -3,8 +3,8 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "Manchester United 1998-1999 Retro Jersey",
-            "friendly_name": "Manchester United 1998-1999 Retro Jersey"
+            "name": "Manchester United",
+            "friendly_name": "Manchester United"
         }
     }
 ]
