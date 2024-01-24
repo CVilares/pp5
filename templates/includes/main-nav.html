@@ -17,15 +17,15 @@
 
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="England-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 England
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Manchester United</a>
-                <a href="" class="dropdown-item">Arsenal</a>
-                <a href="" class="dropdown-item">Manchester City</a>
-                <a href="" class="dropdown-item">Liverpool</a>
+            <div class="dropdown-menu border-0" aria-labelledby="England-link">
+                <a href="{% url 'products' %}?category=Manchester_United" class="dropdown-item">Manchester United</a>
+                <a href="{% url 'products' %}?category=Arsenal" class="dropdown-item">Arsenal</a>
+                <a href="{% url 'products' %}?category=Manchester City" class="dropdown-item">Manchester City</a>
+                <a href="{% url 'products' %}?category=Liverpool" class="dropdown-item">Liverpool</a>
             </div>
         </li>
 
@@ -34,12 +34,12 @@
 
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="Portugal-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Portugal
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Sporting Portugal</a>
+            <div class="dropdown-menu border-0" aria-labelledby="Portugal-link">
+                <a href="{% url 'products' %}?category=Sporting Portugal" class="dropdown-item">Sporting Portugal</a>
                 <a href="" class="dropdown-item">FC Porto</a>
                 <a href="" class="dropdown-item">SL Benfica</a>
             </div>
@@ -49,11 +49,11 @@
         
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="Spain-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Spain
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0" aria-labelledby="Spain-link">
                 <a href="" class="dropdown-item">Barcelona</a>
                 <a href="" class="dropdown-item">Real Madrid</a>
                 <a href="" class="dropdown-item">Atletico</a>
