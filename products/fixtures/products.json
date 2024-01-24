@@ -4,14 +4,14 @@
         "model": "products.product",
         "fields": {
             "sku": "1",
-            "name": "Manchester United ",
+            "name": "Manchester United",
             "description": "Classic retro jersey featuring the iconic Manchester United design from the 1998-1999 season.",
             "price": 79.99,
             "category": 1,
             "year": 1999,
             "size": "XL",
             "image_url": "https://classicscollectivestore.com/wp-content/uploads/2021/11/9899MANUHOME.png",
-            "image": "Manchester-united.png" 
+            "image": "manchester-united.png" 
         }
     },
     {
