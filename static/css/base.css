@@ -65,6 +65,12 @@ footer {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
 .shop-now-button:hover {
     background: #FF0000;
     
@@ -88,27 +94,18 @@ footer {
     border: 1px solid black !important;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
 
-
-}
 
 .sticky-footer {
         
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                color: black;
-                padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 1rem 0;            
             
     
 }
@@ -130,41 +127,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.form-signin {
-    max-width: 330px;
-    padding: 1rem;
-  }
-  
-  .form-signin .form-floating:focus-within {
-    z-index: 2;
-  }
-  
-  .form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  
-  .bg-image-vertical {
-    background: url('/media/hero_image.webp');
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 100%;
-    }
-    
-    @media (min-width: 1025px) {
-    .h-custom-2 {
-    height: 100%;
-    }
-    }
+
     
     
   

@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-re2(1ez&%_g$j6^0zywf7h$l(bki784lpk2p7e^24#i*$b@40('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-cvilares-pp5-5s5wf1it5os.ws-eu107.gitpod.io']
 
@@ -76,6 +76,7 @@ TEMPLATES = [
                 'django.template.context_processors.request', #required by allauth/django access http
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'bag.contexts.bag_contents',
             ],
         },
     },
@@ -163,3 +164,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS = [
+    "https://8000-cvilares-pp5-5s5wf1it5os.ws-eu107.gitpod.io",
+    # Add other trusted origins if needed
+]

@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import handler404, handler500, handler403, handler405
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,3 +27,8 @@ urlpatterns = [
     path('bag/', include('bag.urls')),
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'your_skin.views.handler404'
+handler500 = 'your_skin.views.handler500'
+handler403 = 'your_skin.views.handler403'
+handler405 = 'your_skin.views.handler405'
