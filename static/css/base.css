@@ -128,8 +128,23 @@ footer {
 }
 
 
-    
-    
+.btt-link,
+.update-link,
+.remove-item,
+.rgba-red-strong {
+    cursor: pointer;
+}
+
+.text-primary {
+    color: black;
+}
+
+.text-primary:hover {
+    color: red;
+}
+
+
+
   
 
 /* fixed top navbar only on medium and up */
