@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
+from .models import OrderHistory
 
 # Create your views here.
 
@@ -46,3 +47,8 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def order_history(request):
+    order_history_list = OrderHistory.objects.all()
+    return render(request, 'products/order_history.html', {'order_history_list': order_history_list})
