@@ -1,53 +1,22 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "account/base.html" %}
+{% load i18n %}
 
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
+<div class="container text-center mt-5">
+    <h1 style="font-size: 24px;">{% trans "Sign In" %}</h1>
 
+    <p style="font-size: 16px;">{% blocktrans %}If you don't have an account yet, please <a href="{{ signup_url }}" style="color: #007bff; text-decoration: underline;">sign up</a> first.{% endblocktrans %}</p>
 
-
-
-
-
-<div class="container-fluid">
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title text-center logo-font">Register</h2>
-                    <hr class="w-50 mb-4">
-
-                    <!-- Sign In Form -->
-                    <form>
-                        <!-- Email input -->
-                        <div class="form-outline mb-4">
-                            <input type="email" id="email" class="form-control" />
-                            <label class="form-label" for="email">Email</label>
-                        </div>
-
-                        <!-- Password input -->
-                        <div class="form-outline mb-4">
-                            <input type="password" id="password" class="form-control" />
-                            <label class="form-label" for="password">Password</label>
-                        </div>
-
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-danger btn-block mb-4">Sign In</button>
-                    </form>
-                    <!-- End Sign In Form -->
-                </div>
-            </div>
-        </div>
-    </div>
+    <form class="login" method="post" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button type="submit" class="btn btn-primary" style="font-size: 18px;">{% trans "Sign In" %} &raquo;</button>
+    </form>
 </div>
-
-
-
 {% endblock %}
+
