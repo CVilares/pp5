@@ -1,12 +1,53 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap">
+  <style>
+    body {
+      color: black; /* Set text color */
+      font-family: 'Grape Nuts', cursive; /* Apply Grape Nuts font */
+    }
 
-{% block content %}
+    .center-container {
+      margin: auto;
+      max-width: 600px;
+      padding: 70px 0;
+      text-align: center;
+      margin-top: 150px; /* Add margin-top */
+    }
 
-    <h1>404 Not Found</h1>
+    h1, p {
+      font-size: 2em; /* Set a consistent font size for headings and paragraphs */
+    }
+
+    .shop-now-button {
+      background-color: #dc3545;
+      color: #ffffff;
+      border: none;
+      text-decoration: none;
+      font-size: 2em; /* Set a consistent font size for the button */
+      padding: 10px 20px; /* Add padding for better button appearance */
+      display: inline-block; /* Make the button an inline block */
+      margin-top: 20px; /* Add margin-top to the button */
+    }
+
+    .shop-now-button:hover {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <h1>403 Not Found</h1>
     <p>The requested page was not found.</p>
-    <div>
-        <a href="{% url 'products' %}" class="btn btn-md btn-navy my-2">
-            Keep exploring here instead
-        </a>
+    <div class="container text-center mt-5">
+      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase">Keep shopping here</a>
     </div>
-{% endblock %}
+  </div>
+</body>
+</html>
+
+

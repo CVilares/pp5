@@ -106,7 +106,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        <a class="{% if grand_total %}text-danger font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -161,7 +161,7 @@
             <a class="nav-link footerLink" href="https://www.instagram.com" target="_blank"><strong>Instagram</strong></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link footerLink" href=""><strong>My Order</strong></a>
+            <a class="nav-link footerLink text-danger" href="{% url 'view_bag' %}"><strong>My Order</strong></a>
         </li>
     </ul>
     <div class="container my-auto">

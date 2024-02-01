@@ -72,9 +72,8 @@ footer {
 }
 
 .shop-now-button:hover {
-    background: #FF0000;
-    
-    color: #FFFF00;
+    background-color: #dc3545; 
+    color: #ffffff; 
     
 }
 .shop-now-button:active,
@@ -135,13 +134,9 @@ footer {
     cursor: pointer;
 }
 
-.text-primary {
-    color: black;
-}
 
-.text-primary:hover {
-    color: red;
-}
+
+
 
 
 
