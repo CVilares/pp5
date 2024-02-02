@@ -23,6 +23,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        
     {% endblock %}
 
     {% block extra_css %}
@@ -42,6 +43,7 @@
             crossorigin="anonymous"></script>
             <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
+        
     {% endblock %}
 
     {% block extra_js %}
@@ -105,7 +107,7 @@
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                             <a href="{##}" class="dropdown-item">order History</a>
                             
-                            <a href="{% url 'wishlist' %}" class="dropdown-item">Wishlist</a>
+                            <a href="" class="dropdown-item">Wishlist</a>
                             {% endif %}
                             <a href="" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -183,7 +185,8 @@
     </div>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link footerLink" aria-current="page" href=""><strong>About Us</strong></a>
+            <a class="nav-link footerLink" aria-current="page"  href="{% url 'privacy_policy' %}"><strong>Privacy Policy</strong></a>
+
         </li>
         <li class="nav-item">
             <a class="nav-link footerLink" href="https://www.instagram.com" target="_blank"><strong>Instagram</strong></a>

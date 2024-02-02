@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 
 
+
 class Category(models.Model):
 
     class Meta:
@@ -29,14 +30,8 @@ class Product(models.Model):
     year = models.IntegerField(blank=True, null=True) 
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-
+    
+    
     def __str__(self):
         return self.name
 
-class OrderHistory(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    product_name = models.CharField(max_length=255)
-    order_date = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f'{self.user.username} - {self.product_name} - {self.order_date}'  
