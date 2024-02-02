@@ -172,3 +172,15 @@ def order_history(request):
     orders = OrderHistory.objects.filter(user=request.user).order_by('-order_date')
     context = {'orders': orders}
     return render(request, 'products/order_history.html', context)
+
+@login_required
+def wishlist_view(request):
+    try:
+        wishlists = Wishlist.objects.all()  
+    except: None
+        
+    context = {
+            "wishlists": "wishlists"
+        }
+
+    return render(request, "products/wishlist.html", context)

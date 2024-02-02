@@ -87,18 +87,7 @@
                     </li>
 
 
-                    {% if request.user.is_authenticated %}
-        <li class="list-inline-item">
-            <a class="text-black nav-link" href="{% url 'order_history' %}">
-                <div class="text-center">
-                    <div><i class="fas fa-history fa-lg"></i></div>
-                    <p class="my-0">order History</p>
-                </div>
-            </a>
-        </li>
-       
-        {% endif %}
-
+                   
 
 
 
@@ -114,13 +103,16 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="{##}" class="dropdown-item">order History</a>
+                            
+                            <a href="{% url 'wishlist' %}" class="dropdown-item">Wishlist</a>
                             {% endif %}
                             <a href="" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                            <a href="{##}" class="dropdown-item">something extra</a>
+                            
                             {% endif %}
                         </div>
                     </li>
