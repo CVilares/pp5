@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-re2(1ez&%_g$j6^0zywf7h$l(bki784lpk2p7e^24#i*$b@40('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-cvilares-pp5-5s5wf1it5os.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = ['8000-cvilares-pp5-5s5wf1it5os.ws-eu107.gitpod.io', 'localhost']
 
 
 # Application definition
@@ -126,16 +126,18 @@ WSGI_APPLICATION = 'your_skin.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
-DATABASES = {
-     'default': dj_database_url.parse('postgres://furpqjgh:49MXOR6HfSTeydqhoUhpvqTV7kYR2p-x@tai.db.elephantsql.com/furpqjgh')
- }
 
 
 # Password validation

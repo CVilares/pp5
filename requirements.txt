@@ -6,6 +6,7 @@ django-allauth==0.60.1
 django-contrib-comments==2.2.0
 django-countries==7.5.1
 django-crispy-forms==2.1
+gunicorn==21.2.0
 oauthlib==3.2.2
 pillow==10.2.0
 psycopg2==2.9.9
