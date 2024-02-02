@@ -182,3 +182,10 @@ CSRF_TRUSTED_ORIGINS = [
     "https://8000-cvilares-pp5-5s5wf1it5os.ws-eu107.gitpod.io",
     # Add other trusted origins if needed
 ]
+
+# Stripe
+
+STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'usd'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
