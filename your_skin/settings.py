@@ -22,11 +22,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY','')
+# Ensure SECRET_KEY is set
+if 'SECRET_KEY' not in os.environ:
+    SECRET_KEY = 'your_secret_key_here'
+else:
+    SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-cvilares-pp5-cy99c0d10d7.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['pp5-a-3c3a1f9d2367.herokuapp.com']
 
 
 # Application definition

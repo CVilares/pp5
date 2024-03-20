@@ -11,8 +11,10 @@
             "year": 1999,
             "size": "XL",
             "image_url": "https://classicscollectivestore.com/wp-content/uploads/2021/11/9899MANUHOME.png",
-            "image": "manchester-united.png" 
+            "image": "https://classicscollectivestore.com/wp-content/uploads/2021/11/9899MANUHOME.png"
         }
+    
+    
     },
     {
         "pk": 2,
