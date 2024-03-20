@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['git.heroku.com/pp5-a.git',]
+ALLOWED_HOSTS = ['8000-cvilares-pp5-cy99c0d10d7.ws-eu110.gitpod.io']
 
 
 # Application definition
